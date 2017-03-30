@@ -3,16 +3,28 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Page One</ion-title>
+    <ion-title>Inicial</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h3 style="text-align: center">Nutri Life App</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+  <p style="text-align: center">
+    Suplementos e Naturais
   </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div>
+    <img src="assets/img/nutrilifeapp.png">
+  </div>
+
+  <ion-fab bottom left>
+    <button ion-fab color="dark"><ion-icon name="arrow-dropright"></ion-icon></button>
+    <ion-fab-list side="right">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-instagram"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-whatsapp"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
 </ion-content>
