@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
-import {ServiceProvider} from '../../providers/service-provider'
+import {ServiceProvider} from '../../providers/service-provider';
 
 @Component({
   selector: 'page-page1',
@@ -10,10 +10,19 @@ import {ServiceProvider} from '../../providers/service-provider'
 })
 export class Page1 {
 
-  produtos : any[];
+  users : any[];
 
-  constructor(public navCtrl: NavController, public servece : ServiceProvider) {
+  constructor(public navCtrl: NavController, public service: ServiceProvider) {
+    this.getDados();
+  }
 
+  getDados() {
+
+    return this.service.getData().subscribe(
+      
+      data=>this.users = data,
+      err=>console.log(err)
+    )
   }
 
 }

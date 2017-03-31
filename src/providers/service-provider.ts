@@ -13,15 +13,15 @@ import {Observable} from 'rxjs/Observable';
 @Injectable()
 export class ServiceProvider {
 
-  api : string = 'http://localhost:82/api/api/';
+  api : string = 'http://localhost/api/';
 
   constructor(public http: Http) {
-
+    console.log('Hello ServiceProvider Provider');
   }
 
   getData() {
 
-    this.http.get(this.api+'apiRecupera.php').map(res=>res.json());
+    return this.http.get(this.api+'apiRecupera.php').map(res=>res.json());
   }
 
 }
