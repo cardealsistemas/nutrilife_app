@@ -23,7 +23,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: '<ion-icon name="home">Inicial</ion-icon>', component: Page1 },
+      { title: 'Inicial', component: Page1 },
       { title: 'Produtos', component: Page2 },
       { title: 'Receitas Fitness', component: Page3 },
       { title: 'Contatos', component: Page1},
