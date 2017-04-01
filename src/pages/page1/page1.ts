@@ -10,17 +10,17 @@ import {ServiceProvider} from '../../providers/service-provider';
 })
 export class Page1 {
 
-  users : any[];
+  categorias : any[];
 
   constructor(public navCtrl: NavController, public service: ServiceProvider) {
+
     this.getDados();
   }
 
   getDados() {
 
-    return this.service.getData().subscribe(
-      
-      data=>this.users = data,
+    return this.service.getData('getCategorias').subscribe(
+      data=>this.categorias = data,
       err=>console.log(err)
     )
   }
