@@ -7,6 +7,15 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  
+<ion-content padding>
+
+  <h3>TESTE DO BD:</h3>
+
+    <ion-card>
+      <ion-card-content *ngFor="let categoria of categorias">
+        <h3>Categoria: {{categoria.Nome}}</h3>
+
+      </ion-card-content>
+    </ion-card>
+
 </ion-content>
