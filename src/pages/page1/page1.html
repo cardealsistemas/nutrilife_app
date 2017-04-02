@@ -19,19 +19,12 @@
 
   <ion-card>
     <ion-slides pager autoplay="3000" loop="true" speed="2000">
-      <ion-slide>
-        <img src="assets/teste/img1.png" alt="">
+      <ion-slide *ngFor="let promocao of promocoes">
+        <img src={{promocao.Src_Img}} alt="">
       </ion-slide>
-      <ion-slide>
-        <img src="assets/teste/img2.png" alt="">
-      </ion-slide>
-      <ion-slide>
-        <img src="assets/teste/img3.png" alt="">
-      </ion-slide>
-      <ion-slide>
-        <img src="assets/teste/img4.png" alt="">
-      </ion-slide>
+
     </ion-slides>
+
   </ion-card>
 
 </ion-content>

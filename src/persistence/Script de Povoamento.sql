@@ -27,3 +27,12 @@ INSERT INTO SUBCATEGORIAS(Nome, idCategoria) VALUES('Emagrecimento', 2);
 
 INSERT INTO SUBCATEGORIAS(Nome, idCategoria) VALUES('Fitoterápicos', 3);
 INSERT INTO SUBCATEGORIAS(Nome, idCategoria) VALUES('Óleo de Côco', 3);
+
+-- **********************
+-- INSERINDO PROMOCOES --
+-- **********************
+
+INSERT INTO PROMOCOES(SRC_Img) VALUES('http://localhost/api/img1.png');
+INSERT INTO PROMOCOES(SRC_Img) VALUES('http://localhost/api/img2.png');
+INSERT INTO PROMOCOES(SRC_Img) VALUES('http://localhost/api/img3.png');
+INSERT INTO PROMOCOES(SRC_Img) VALUES('http://localhost/api/img4.png');

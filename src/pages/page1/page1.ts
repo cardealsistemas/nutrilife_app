@@ -11,7 +11,7 @@ import { Slides } from 'ionic-angular';
 export class Page1 {
 
   @ViewChild(Slides) slides: Slides;
-  categorias : any[];
+  promocoes : any[];
 
   constructor(public navCtrl: NavController, public service: ServiceProvider) {
 
@@ -20,8 +20,8 @@ export class Page1 {
 
   getDados() {
 
-    return this.service.getData('getCategorias').subscribe(
-      data=>this.categorias = data,
+    return this.service.getData('getPromocoes').subscribe(
+      data=>this.promocoes = data,
       err=>console.log(err)
     )
   }
