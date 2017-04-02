@@ -5,23 +5,32 @@ page-page1 {
 /*Roxo: #800080 ou 800080ff
 Verde: #a5cc38 ou a5cc38ff*/
 
+.newColor {
+
+  background-color: rgb(174, 36, 177);
+
+}
+
 .centralizado {
 
   text-align: center;
+  font-family: serif;
 
 }
 
 #titulo {
 
-  color: #800080;
+  color: #ffffff;
   margin-top: 10px;
+  font-size: 40px;
 
 }
 
 #subtitulo {
 
-  color: #a5cc38;
+  color: #ffffff;
   line-height: 1px;
   margin-bottom: 30px;
-
+  font-size: 20px;
+  
 }

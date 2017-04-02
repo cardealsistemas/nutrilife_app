@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="newColor">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -7,7 +7,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="newColor">
 
   <h1 class="centralizado" id="titulo">Nutri Life App</h1>
 
@@ -15,16 +15,14 @@
     Suplementos e Naturais
   </p>
 
-  <h2 class="centralizado" id="titulo">Promoções:</h2>
-
   <ion-card>
     <ion-slides pager autoplay="3000" loop="true" speed="2000">
       <ion-slide *ngFor="let promocao of promocoes">
         <img src={{promocao.Src_Img}} alt="">
       </ion-slide>
-
     </ion-slides>
-
   </ion-card>
+
+  <h2 class="centralizado" id="titulo">Promoções!</h2>
 
 </ion-content>
