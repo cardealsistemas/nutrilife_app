@@ -24516,3 +24516,24 @@ ion-navbar.toolbar {
     padding-top: calc(16px + 20px);
   }
 }
+
+/*Roxo: #800080 ou 800080ff
+Verde: #a5cc38 ou a5cc38ff*/
+.centralizado {
+  text-align: center;
+}
+
+#titulo {
+  color: #800080;
+  margin-top: 10px;
+}
+
+#subtitulo {
+  color: #a5cc38;
+  line-height: 1px;
+  margin-bottom: 30px;
+}
+
+.mySlide {
+  margin-top: 12px;
+}
