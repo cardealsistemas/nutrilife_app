@@ -62,6 +62,27 @@ $pass = "";
 	         }
 
 					 break;
+				 } case "getPromocoes": {
+
+					 try {
+
+							$query = $con->prepare('SELECT * FROM PROMOCOES ORDER BY ID_Promocao DESC LIMIT 4');
+							$query->execute();
+
+							while($row = $query->fetch(PDO::FETCH_OBJ)) {
+
+									// Assign each row of data to associative array
+									$data[] = $row;
+							 }
+
+							 // Return data as JSON
+							 echo json_encode($data);
+					 } catch(PDOException $e) {
+
+	            echo "Erro: ".$e->getMessage();
+	         }
+
+					 break;
 				 }
 			 }
 
