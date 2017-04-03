@@ -39,7 +39,9 @@ CREATE TABLE IF NOT EXISTS PRODUTOS(
   Preco FLOAT NOT NULL,
   Disponibilidade BOOLEAN NOT NULL DEFAULT FALSE,
   idSubCategoria INT NOT NULL,
-  FOREIGN KEY (idSubCategoria) REFERENCES SUBCATEGORIAS(ID_SubCategoria)
+  idCategoria INT NOT NULL,
+  FOREIGN KEY (idSubCategoria) REFERENCES SUBCATEGORIAS(ID_SubCategoria),
+  FOREIGN KEY (idCategoria) REFERENCES CATEGORIAS(ID_Categoria)
 )ENGINE = INNODB;
 
 -- **********************

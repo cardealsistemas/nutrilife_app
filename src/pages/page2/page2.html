@@ -3,18 +3,64 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Produtos</ion-title>
+    <ion-title>
+    
+
+Produtos</ion-title>
+
+
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
-  <h3>TESTE DO BD:</h3>
+<!--<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-list>
+  <ion-item *ngFor="let item of items">
+    {{item.Nome}}
+  </ion-item>
+</ion-list>-->
 
+<ion-searchbar
+  [(ngModel)]="searchTerm"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="filterItems()"
+  (ionCancel)="onCancel($event)">
+</ion-searchbar>
+
+
+<ion-buttons end>
+          <button ion-button icon-only (click)="showFilters()">
+              <ion-icon name="funnel" [style.color]="hasFilter ? 'orange' : 'inherit'"></ion-icon>
+          </button>
+       </ion-buttons> 
+
+ <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+       pullingIcon="arrow-dropdown"
+       pullingText="Pull to refresh"
+       refreshingSpinner="circles"
+       refreshingText="Refreshing...">
+    </ion-refresher-content>
+ </ion-refresher> 
+
+<ion-list>
+    <ion-item *ngFor="let item of itens" (click)="itemSelected(item)">
+
+        <ion-thumbnail item-left>
+            <img src="">
+        </ion-thumbnail>
+      <h2>{{item.Nome}}</h2>
+      <p>{{item.Descricao}}</p>
+      <p>Preço: R${{item.Preco}}</p>
+    </ion-item>
+  </ion-list>
+  
+<!--
     <ion-card>
       <ion-card-content *ngFor="let categoria of categorias">
         <h3>Categoria: {{categoria.Nome}}</h3>
       </ion-card-content>
     </ion-card>
-
+-->
 </ion-content>

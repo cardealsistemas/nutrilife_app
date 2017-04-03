@@ -36,3 +36,22 @@ INSERT INTO PROMOCOES(SRC_Img) VALUES('http://localhost/api/img1.png');
 INSERT INTO PROMOCOES(SRC_Img) VALUES('http://localhost/api/img2.png');
 INSERT INTO PROMOCOES(SRC_Img) VALUES('http://localhost/api/img3.png');
 INSERT INTO PROMOCOES(SRC_Img) VALUES('http://localhost/api/img4.png');
+
+
+-- **********************
+-- INSERINDO PRODUTOS --
+-- **********************
+
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Whey Protein', 'Produto para blablablbala', 280, 1, 2, 1);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Hyper', 'Produto para blablablbala', 280, 1, 3, 1);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Bomba Baiana 1', 'Produto para blablablbala', 280, 1, 2, 1);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Whey Protein 3', 'Produto para blablablbala', 280, 1, 13, 2);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Whey Protein 4', 'Produto para blablablbala', 111, 1, 13, 2);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Whey Protein 5', 'Produto para blablablbala', 280, 1, 5, 1);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Whey Protein 16', 'Produto para blablablbala', 99.30, 1, 11, 2);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Whey Protein 17', 'Produto para blablablbala', 280, 1, 13, 2);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Whey Protein 18', 'Produto para blablablbala', 567, 1, 11, 2);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Whey Protein 19', 'Produto para blablablbala', 280, 1, 12, 2);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Whey Protein 20', 'Produto para blablablbala', 280, 1, 13, 2);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Whey Protein 21', 'Produto para blablablbala', 890, 1, 14, 3);
+INSERT INTO PRODUTOS(Nome, Descricao, Preco, Disponibilidade, idSubCategoria, idCategoria) VALUES('Whey Protein 22', 'Produto para blablablbala', 280, 1, 14, 3);
