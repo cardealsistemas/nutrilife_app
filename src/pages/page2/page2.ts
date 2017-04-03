@@ -93,7 +93,7 @@ export class Page2 {
   public itens: Array<string>;
   public noFilter: Array<any>;
   public hasFilter: boolean = false;
-  searchTerm: string;   
+  searchTerm: string = '';   
    
    constructor(public navCtrl: NavController, public http: Http, 
      public loadingCtrl: LoadingController, public service: ServiceProvider
@@ -165,7 +165,7 @@ export class Page2 {
           }
         },        
         {
-          text: 'Cancel',
+          text: 'Limpar Filtro',
           role: 'cancel',
           handler: () => {
            

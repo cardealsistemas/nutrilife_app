@@ -4,7 +4,8 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-    
+
+
 
 Produtos</ion-title>
 
@@ -19,14 +20,17 @@ Produtos</ion-title>
   <ion-item *ngFor="let item of items">
     {{item.Nome}}
   </ion-item>
+
+  
 </ion-list>-->
 
-<ion-searchbar
+ <ion-searchbar 
   [(ngModel)]="searchTerm"
   [showCancelButton]="shouldShowCancel"
   (ionInput)="filterItems()"
   (ionCancel)="onCancel($event)">
 </ion-searchbar>
+    
 
 
 <ion-buttons end>
