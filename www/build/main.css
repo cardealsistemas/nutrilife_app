@@ -24517,35 +24517,36 @@ ion-navbar.toolbar {
   }
 }
 
-.cor {
-  background-color: #ae24b1;
-}
-
 #list a {
-  color: #ffffff;
+  color: #ae24b1;
   font-size: 18px;
 }
 
-/*Roxo: #800080 ou 800080ff
+/*Roxo: #800080 ou 800080ff, #ae24b1
 Verde: #a5cc38 ou a5cc38ff*/
-.newColor {
-  background-color: #ae24b1;
-}
-
 .centralizado {
   text-align: center;
   font-family: serif;
 }
 
 #titulo {
-  color: #ffffff;
+  color: #ae24b1;
   margin-top: 10px;
   font-size: 40px;
 }
 
 #subtitulo {
-  color: #ffffff;
+  color: #a5cc38;
   line-height: 1px;
   margin-bottom: 30px;
   font-size: 20px;
+}
+
+.myP {
+  color: #ae24b1;
+}
+
+.centralizado {
+  text-align: center;
+  font-family: serif;
 }

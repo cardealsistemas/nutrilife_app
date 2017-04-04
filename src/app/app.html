@@ -5,9 +5,9 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content class="cor">
+  <ion-content>
     <ion-list id="list">
-      <button class="cor" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         <a>{{p.title}}</a>
       </button>
     </ion-list>

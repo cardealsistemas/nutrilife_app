@@ -2,14 +2,8 @@ page-page1 {
 
 }
 
-/*Roxo: #800080 ou 800080ff
+/*Roxo: #800080 ou 800080ff, #ae24b1
 Verde: #a5cc38 ou a5cc38ff*/
-
-.newColor {
-
-  background-color: rgb(174, 36, 177);
-
-}
 
 .centralizado {
 
@@ -20,7 +14,7 @@ Verde: #a5cc38 ou a5cc38ff*/
 
 #titulo {
 
-  color: #ffffff;
+  color: #ae24b1;
   margin-top: 10px;
   font-size: 40px;
 
@@ -28,9 +22,15 @@ Verde: #a5cc38 ou a5cc38ff*/
 
 #subtitulo {
 
-  color: #ffffff;
+  color: #a5cc38;
   line-height: 1px;
   margin-bottom: 30px;
   font-size: 20px;
-  
+
+}
+
+.myP{
+
+  color: #ae24b1;
+
 }
